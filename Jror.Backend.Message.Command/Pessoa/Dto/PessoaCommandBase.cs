@@ -1,7 +1,7 @@
 ﻿using Jr.Backend.Message.Share.Pessoa;
 using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Jr.Backend.Message.Command.Pessoa.Dto
 {

@@ -15,4 +15,7 @@
 	<ItemGroup>
 		<PackageReference Include="Jror.Backend.Libs.Messaging.Abstractions" Version="1.0.2" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Jror.Backend.Message.Share\Jror.Backend.Message.Share.csproj" />
+	</ItemGroup>
 </Project>

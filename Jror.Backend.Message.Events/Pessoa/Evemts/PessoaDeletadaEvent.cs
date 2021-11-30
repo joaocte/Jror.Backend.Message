@@ -1,7 +1,7 @@
 ﻿using Jr.Backend.Message.Events.Pessoa.Dto;
 using Jr.Backend.Message.Share.Pessoa;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace Jr.Backend.Message.Events.Pessoa.Evemts
 {

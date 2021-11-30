@@ -2,7 +2,7 @@
 using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Jr.Backend.Message.Events.Fornecedor.Dto
 {
