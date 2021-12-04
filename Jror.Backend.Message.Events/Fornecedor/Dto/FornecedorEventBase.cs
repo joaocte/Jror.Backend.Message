@@ -1,10 +1,10 @@
-﻿using Jr.Backend.Message.Share.Fornecedor;
-using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
+﻿using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
+using Jror.Backend.Message.Share.Fornecedor;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
-namespace Jr.Backend.Message.Events.Fornecedor.Dto
+namespace Jror.Backend.Message.Events.Fornecedor.Dto
 {
     public abstract class FornecedorEventBase : IEvent
     {
@@ -47,7 +47,7 @@ namespace Jr.Backend.Message.Events.Fornecedor.Dto
         public string StatusCadastro { get; private set; }
 
         [JsonConstructor]
-        public FornecedorEventBase(bool aceiteTermosDeUso, decimal capitalSocial, string celular, int cnaeFiscal, string cnaeFiscalDescricao, List<CnaesSecundario> cnaesSecundarios, string cnpj, int codigoNaturezaJuridica, DateTime dataCadastro, DateTime? dataExclusaoDoSimples, DateTime dataInicioAtividade, DateTime? dataOpcaoPeloSimples, DateTime dataSituacaoCadastral, DateTime? dataSituacaoEspecial, string descricaoMatrizFilial, string descricaoPorte, string descricaoSituacaoCadastral, IEnumerable<string> emailContato, IEnumerable<string> emailFatura, List<Endereco> enderecos, int identificadorMatrizFilial, InformacoesBancarias informacoesBancarias, int motivoSituacaoCadastral, string nomeCidadeExterior, string nomeContato, string nomeFantasia, bool opcaoPeloMei, bool opcaoPeloSimples, int porte, List<Qsa> qsa, int qualificacaoDoResponsavel, string razaoSocial, int situacaoCadastral, string situacaoEspecial, IEnumerable<string> telefones, string statusCadastro)
+        protected FornecedorEventBase(bool aceiteTermosDeUso, decimal capitalSocial, string celular, int cnaeFiscal, string cnaeFiscalDescricao, List<CnaesSecundario> cnaesSecundarios, string cnpj, int codigoNaturezaJuridica, DateTime dataCadastro, DateTime? dataExclusaoDoSimples, DateTime dataInicioAtividade, DateTime? dataOpcaoPeloSimples, DateTime dataSituacaoCadastral, DateTime? dataSituacaoEspecial, string descricaoMatrizFilial, string descricaoPorte, string descricaoSituacaoCadastral, IEnumerable<string> emailContato, IEnumerable<string> emailFatura, List<Endereco> enderecos, int identificadorMatrizFilial, InformacoesBancarias informacoesBancarias, int motivoSituacaoCadastral, string nomeCidadeExterior, string nomeContato, string nomeFantasia, bool opcaoPeloMei, bool opcaoPeloSimples, int porte, List<Qsa> qsa, int qualificacaoDoResponsavel, string razaoSocial, int situacaoCadastral, string situacaoEspecial, IEnumerable<string> telefones, string statusCadastro)
         {
             AceiteTermosDeUso = aceiteTermosDeUso;
             CapitalSocial = capitalSocial;

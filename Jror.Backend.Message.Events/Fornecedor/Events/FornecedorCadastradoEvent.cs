@@ -1,9 +1,9 @@
-﻿using Jr.Backend.Message.Events.Fornecedor.Dto;
-using Jr.Backend.Message.Share.Fornecedor;
+﻿using Jror.Backend.Message.Events.Fornecedor.Dto;
+using Jror.Backend.Message.Share.Fornecedor;
 using System;
 using System.Collections.Generic;
 
-namespace Jr.Backend.Message.Events.Fornecedor.Events
+namespace Jror.Backend.Message.Events.Fornecedor.Events
 {
     public class FornecedorCadastradoEvent : FornecedorEventBase
     {

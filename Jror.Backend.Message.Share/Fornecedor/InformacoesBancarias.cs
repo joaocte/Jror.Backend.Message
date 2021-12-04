@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Jr.Backend.Message.Share.Fornecedor
+namespace Jror.Backend.Message.Share.Fornecedor
 {
     public class InformacoesBancarias
     {

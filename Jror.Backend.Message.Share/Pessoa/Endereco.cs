@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Jr.Backend.Message.Share.Pessoa
+namespace Jror.Backend.Message.Share.Pessoa
 {
     public class Endereco
     {

@@ -1,24 +1,30 @@
-﻿using Jr.Backend.Message.Share.Pessoa;
-using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
+﻿using Jror.Backend.Libs.Messaging.Abstractions.Interfaces;
+using Jror.Backend.Message.Share.Pessoa;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Jr.Backend.Message.Events.Pessoa.Dto
+namespace Jror.Backend.Message.Events.Pessoa.Dto
 {
     public abstract class PessoaEventBase : IEvent
     {
-        public NomeCompleto NomeCompleto { get; }
+        public string Nome { get; }
+        public string Sobrenome { get; }
 
         public IEnumerable<Endereco> Enderecos { get; }
 
-        public Documentos Documentos { get; }
+        public string Cpf { get; }
+        public string Rg { get; }
+        public string TituloEleitoral { get; }
 
         [JsonConstructor]
-        protected PessoaEventBase(NomeCompleto nomeCompleto, IEnumerable<Endereco> enderecos, Documentos documentos)
+        protected PessoaEventBase(string nome, string sobrenome, IEnumerable<Endereco> enderecos, string cpf, string rg, string tituloEleitoral)
         {
-            NomeCompleto = nomeCompleto;
+            Nome = nome;
+            Sobrenome = sobrenome;
             Enderecos = enderecos;
-            Documentos = documentos;
+            Cpf = cpf;
+            Rg = rg;
+            TituloEleitoral = tituloEleitoral;
         }
     }
 }
