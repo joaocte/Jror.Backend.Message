@@ -9,11 +9,11 @@
 		<RepositoryUrl>https://github.com/joaocte/Jror.Backend.Libs</RepositoryUrl>
 		<RepositoryType>Public</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Jror.Backend.Libs.Messaging.Abstractions" Version="1.1.1" />
+		<PackageReference Include="Jror.Backend.Libs.Messaging.Abstractions" Version="1.1.6" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Jror.Backend.Message.Share\Jror.Backend.Message.Share.csproj" />
